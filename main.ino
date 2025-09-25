@@ -119,7 +119,7 @@ int pidCorrection(long leftTicks, long rightTicks) {
 }
 
 // ================= MOVE FORWARD =================
-void moveForward(float distance = 400, int basePwm = 80) {
+void moveForward(float distance = 180, int basePwm = 80) {
   long targetTicks = (long)(27.025 * distance);
 
   resetEncoders();
@@ -345,3 +345,4 @@ void loop() {
   }
   delay(100);
 }
+
